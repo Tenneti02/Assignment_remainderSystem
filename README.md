@@ -1,3 +1,8 @@
+Got it! Here's the polished `README.md` with your content and the edited section at the end to include your actual GitHub repo link and directory path.
+
+---
+
+```markdown
 # 📚✨ Assignment Tracker
 
 A beautifully designed web app that helps students **organize, manage, and never miss** their assignment deadlines — with **real-time storage**, **email alerts**, and a clean, responsive UI.
@@ -50,5 +55,44 @@ A beautifully designed web app that helps students **organize, manage, and never
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/<your-username>/assignment-tracker.git
-cd assignment-tracker
+git clone https://github.com/Tenneti02/Assignment_remainderSystem.git
+cd Assignment_remainderSystem/fire
+```
+
+### 2️⃣ Install Dependencies
+
+```bash
+npm install
+```
+
+### 3️⃣ Start the Development Server
+
+```bash
+npm start
+```
+
+---
+
+## 🌐 Live Demo
+
+Check out the app live here:  
+👉 [https://tenneti02.github.io/Assignment_remainderSystem/](https://tenneti02.github.io/Assignment_remainderSystem/)
+
+---
+
+## 🤝 Contributing
+
+Pull requests are welcome! For major changes, please open an issue first to discuss what you’d like to change.
+
+---
+
+## 📩 Contact
+
+Made with ❤️ by **Surya Tenneti**  
+📬 GitHub: [@Tenneti02](https://github.com/Tenneti02)
+
+---
+
+```
+
+Let me know if you want a **demo GIF**, **screenshots**, or **badges** (like Netlify/GitHub Pages status, tech logos, etc.) added at the top!
