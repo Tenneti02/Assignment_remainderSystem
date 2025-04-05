@@ -1,8 +1,3 @@
-Got it! Here's the polished `README.md` with your content and the edited section at the end to include your actual GitHub repo link and directory path.
-
----
-
-```markdown
 # 📚✨ Assignment Tracker
 
 A beautifully designed web app that helps students **organize, manage, and never miss** their assignment deadlines — with **real-time storage**, **email alerts**, and a clean, responsive UI.
