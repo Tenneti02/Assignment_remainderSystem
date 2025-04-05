@@ -1,0 +1,428 @@
+/* Define variables for light mode (default) */
+:root {
+    --background: linear-gradient(to right, #4ecdc4, #f7d794);
+    --container-bg: white;
+    --text-color: #333;
+    --subtext-color: #555;
+    --input-border: #ccc;
+    --btn-primary-bg: #4ecdc4;
+    --btn-primary-hover: #45b7aa;
+    --btn-secondary-bg: #f7d794;
+    --btn-secondary-hover: #e6c683;
+    --btn-danger-bg: #ff6b6b;
+    --btn-danger-hover: #e65a5a;
+    --shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    --success-color: #28a745;
+    --error-color: #dc3545;
+  }
+  
+  /* Dark mode overrides */
+  .dark-mode {
+    --background: linear-gradient(to right, #2a2a2a, #4a4a4a);
+    --container-bg: #1e1e1e;
+    --text-color: #e0e0e0;
+    --subtext-color: #b0b0b0;
+    --input-border: #555;
+    --btn-primary-hover: #3bb8a9;
+    --btn-secondary-hover: #d6b873;
+    --btn-danger-hover: #e65a5a;
+    --shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    --success-color: #28a745;
+    --error-color: #dc3545;
+  }
+  
+  /* Global styles */
+  body {
+    background: var(--background);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: var(--text-color);
+  }
+  
+  /* Containers */
+  .container,
+  .home-container {
+    background: var(--container-bg);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+  }
+  
+  .home-container {
+    padding: 40px;
+    border-radius: 15px;
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  /* Headings and Text */
+  .home-container h1,
+  .container h2 {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+  }
+  
+  .home-container p,
+  .container p {
+    font-size: 1.2rem;
+    color: var(--subtext-color);
+    margin-bottom: 2rem;
+  }
+  
+  /* Form Groups and Buttons */
+  .home-buttons,
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .home-buttons {
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+  }
+  
+  .home-buttons a.btn-primary,
+  .home-buttons a.btn-secondary,
+  .form-group button.btn-primary,
+  .form-group button.btn-secondary,
+  .form-group button.btn-danger {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .btn-primary {
+    background: var(--btn-primary-bg);
+    color: white;
+  }
+  
+  .btn-primary:hover:not(:disabled) {
+    background: var(--btn-primary-hover);
+  }
+  
+  .btn-secondary {
+    background: var(--btn-secondary-bg);
+    color: var(--text-color);
+  }
+  
+  .btn-secondary:hover:not(:disabled) {
+    background: var(--btn-secondary-hover);
+  }
+  
+  .btn-danger {
+    background: var(--btn-danger-bg);
+    color: white;
+  }
+  
+  .btn-danger:hover:not(:disabled) {
+    background: var(--btn-danger-hover);
+  }
+  
+  .btn-primary:disabled,
+  .btn-secondary:disabled,
+  .btn-danger:disabled {
+    background: #a0a0a0;
+    cursor: not-allowed;
+  }
+  
+  /* Input Groups */
+  .input-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: var(--text-color);
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid var(--input-border);
+    border-radius: 4px;
+    background: var(--container-bg);
+    color: var(--text-color);
+  }
+  
+  /* Forgot Password Section */
+  .forgot-password {
+    margin-top: 20px;
+    padding: 1rem;
+    background: var(--container-bg);
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+  }
+  
+  .forgot-password h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 0.75rem;
+    text-align: center;
+  }
+  
+  .forgot-password input {
+    margin-bottom: 10px;
+  }
+  
+  /* Links */
+  .register-link,
+  .login-link {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--subtext-color);
+  }
+  
+  .register-link a,
+  .login-link a {
+    color: var(--btn-primary-bg);
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .register-link a:hover,
+  .login-link a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Toggle Dark Mode Button */
+  .toggle-dark-mode {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background: var(--btn-primary-bg);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .toggle-dark-mode:hover {
+    background: var(--btn-primary-hover);
+  }
+  
+  /* Profile-Specific Styles */
+  .assignments-section {
+    margin-top: 20px;
+  }
+  
+  .assignment-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  .assignment-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background: var(--container-bg);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: var(--shadow);
+  }
+  
+  .assignment-item.completed span {
+    text-decoration: line-through;
+    color: var(--subtext-color);
+  }
+  
+  .assignment-item input.checkbox {
+    margin-right: 10px;
+  }
+  
+  .assignment-item span {
+    flex-grow: 1;
+  }
+  
+  /* Modal Styles */
+  .modal-right {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    background: var(--container-bg);
+    padding: 20px;
+    box-shadow: var(--shadow);
+    outline: none;
+  }
+  
+  .modal-overlay-right {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Notification */
+  .notification {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background: var(--container-bg);
+    color: var(--text-color);
+    border-radius: 5px;
+    box-shadow: var(--shadow);
+  }
+  
+  /* Success and Error Messages */
+  .success {
+    color: var(--success-color);
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .error {
+    color: var(--error-color);
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .container,
+    .home-container {
+      margin: 20px;
+      padding: 15px;
+      max-width: 100%;
+    }
+  
+    .home-buttons {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .modal-right {
+      width: 100%;
+      max-width: 300px;
+    }
+  
+    .toggle-dark-mode {
+      top: 10px;
+      right: 10px;
+      padding: 8px 16px;
+    }
+  }
+  /* ... (keep all other styles from the previous consolidated CSS) ... */
+
+/* Modal Styles */
+.modal-right {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px; /* Fixed width for a panel-like feel */
+    height: 100%; /* Full height */
+    background: var(--container-bg);
+    padding: 20px;
+    box-shadow: var(--shadow);
+    outline: none;
+    overflow-y: auto; /* Allow scrolling if content overflows */
+  }
+  
+  .modal-overlay-right {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  }
+  
+  /* Ensure modal content fits well */
+  .modal-right h3 {
+    margin-top: 0;
+    color: var(--text-color);
+  }
+  
+  .modal-right .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .modal-right .input-group input {
+    width: 100%;
+  }
+  
+  .modal-right .form-group button {
+    width: 100%; /* Full-width buttons in the panel */
+  }
+  
+  /* Responsive adjustment */
+  @media (max-width: 600px) {
+    .modal-right {
+      width: 80%; /* Adjust to percentage for smaller screens */
+      max-width: 300px;
+    }
+  }
+  .container {
+    background: var(--container-bg);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .input-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: var(--text-color);
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid var(--input-border);
+    border-radius: 4px;
+    background: var(--container-bg);
+    color: var(--text-color);
+  }
+  
+  .btn-primary {
+    padding: 10px;
+    background: var(--btn-primary-bg);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .btn-primary:disabled {
+    background: #a0a0a0;
+    cursor: not-allowed;
+  }
+  
+  .error {
+    color: var(--error-color);
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  /* ... (rest of the CSS remains unchanged) ... */
